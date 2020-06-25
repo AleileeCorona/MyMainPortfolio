@@ -37,15 +37,42 @@ header {
   display: block;
 }
 
-header h1 {
-  color: #eff0e5;
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
+.logo {
   font-family: 'Nanum Pen Script', cursive;
-  font-size: 75px;
+  font-size: 72px;
+  color: #e7e6e3;
+  text-align: center;
+  letter-spacing: -3;
+  margin: 0;
+  padding: 20px 0 0 0;
 }
 
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
 
 /*  Main */
 
@@ -104,4 +131,25 @@ main .intro {
   background-color: #c5c0b8;
   padding: 20px 0 30px 0;
   margin: 120px 0;
+}
+
+/* Contact Form Design */
+
+form {
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }
